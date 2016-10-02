@@ -1,0 +1,5 @@
+iEEG Seizure Prediction
+* About this Repo
+Analysis of seizure data from kaggle competition. The goal is to predict seizure. 
+* Requirements
+
