@@ -137,16 +137,3 @@ def calculate_features(file_name):
                                 ))
 
     return feat
-
-
-file_names = os.listdir('./train_1/')
-f = open("features1.txt", "w")
-for name in file_names:
-    label = name.split('.')[0].split('_')[2]
-    f.write(label + ' ')
-    feat = calculate_features("./train_1/"+name)
-    n = 85                           # only care about the first minute
-    for i in range(n):
-        f.write(str(i)+":"+str(feat[i])+" ")
-    f.write("\n")
-f.close()

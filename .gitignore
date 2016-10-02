@@ -3,3 +3,4 @@
 train_*
 test_*
 sp-2016
+data/*
