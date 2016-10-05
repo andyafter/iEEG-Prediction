@@ -1,0 +1,20 @@
+#easy.py cannot add parameters, only by default
+#grid.py do not scale
+#we need scale first
+./svm-scale -l -1 -u 1 -s range1 DWT > DWT.scale
+#then use grid.py to do parameter selection
+#grid.py parameters:
+#for cross validation
+-v 5
+#for balance
+-w1 8 -w-1 1
+#grid.py results
+c = 0.03125 g = 0.0078125 cross-validation rante = 89.6208
+#run svm-train
+-c 0.03125
+-g 0.0078125
+-w1 8 -w-1 1
+#svm-predict(haven't done)
+./svm-scale -l -l -u 1 -s range1 DWT_predict > DWT_predict.scale
+#run svm-predict
+./svm-predict dwt.scale dwt.scale.model dwt_predict.scale
