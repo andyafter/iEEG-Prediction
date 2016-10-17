@@ -4,3 +4,7 @@
 ** Requirements
  You need to put the into the *data* folder. 
  - mkdir data
+You will, however, need to install the listed packages:
+- scipy, numpy, pandas
+- xgboost
+- sklearn
