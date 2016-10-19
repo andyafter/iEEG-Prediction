@@ -7,7 +7,6 @@ import numpy as np
 file_names = os.listdir(DATA_DIR + '/train_3/')
 f = open("./output/features3_1.txt", "w")
 for name in file_names:
-    break
     label = name.split('.')[0].split('_')[2]
     f.write(label + ' ')
     feat = calculate_features(DATA_DIR + "/train_3/"+name)
