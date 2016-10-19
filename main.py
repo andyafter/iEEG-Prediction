@@ -2,7 +2,6 @@ import sys, os
 from feature import calculate_features, mat_to_data
 from settings import DATA_DIR
 
-import matplotlib.pyplot as plt
 import numpy as np
 
 
@@ -24,4 +23,3 @@ f2 = mat_to_data(DATA_DIR + '/train_3/3_1792_0.mat')
 f3 = mat_to_data(DATA_DIR + '/train_3/3_233_0.mat')
 f4 = mat_to_data(DATA_DIR + '/train_3/3_1496_0.mat')
 
-plt.plot(range(240000), f4["data"])
